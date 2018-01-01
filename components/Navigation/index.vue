@@ -1,7 +1,21 @@
 <template>
   <nav id="navigation">
     <div class="navbar navbar-fixed-top" :class="{ 'scrolled': isScrolled }">
-      네비게이션
+      <div class="container">
+        <div class="nav-logo">
+          BCNL
+        </div>
+        <div class="nav-list clearfix">
+          <ul class="list-unstyled">
+            <li><nuxt-link to="/1">HOME</nuxt-link></li>
+            <li><nuxt-link to="/1">MEMBER</nuxt-link></li>
+            <li><nuxt-link to="/1">PROJECTS</nuxt-link></li>
+            <li><nuxt-link to="/1">PUBLICATIONS</nuxt-link></li>
+            <li><nuxt-link to="/1">BOARD</nuxt-link></li>
+            <li><nuxt-link to="/">CONTACT</nuxt-link></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
 </template>
@@ -27,11 +41,4 @@
   }
 </script>
 
-<style lang="less" scoped>
-  #navigation {
-    .navbar {
-      background-color: #fff;
-      box-shadow: 0px 1px 5px #ccc;
-    }
-  }
-</style>
+<style lang="less" src="./navigation.less"></style>
