@@ -1,5 +1,18 @@
 <template>
-  <section class="container">
+  <div id="home">
+    <div class="main-header">
+      <div class="back-image" :style="{ backgroundImage: `url(${require('~/assets/img/main/bcn-main-header-1.jpg')})` }"></div>
+      <div class="content">
+        <div class="container">
+          <span class="color-primary">B</span>roadband<br>
+          <span class="color-primary">C</span>onvergence<br>
+          <span class="color-primary">N</span>etwork<br>
+          <span class="color-primary">L</span>aboratory
+        </div>
+      </div>
+    </div>
+
+    <br><br><br><br><br><br><br>
     <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
     <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
     <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
@@ -16,7 +29,7 @@
         </nuxt-link>
       </li>
     </ul>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -26,14 +39,9 @@ export default {
   async asyncData () {
     let { data } = await axios.get('/api/users')
     return { users: data }
-  },
-  head () {
-    return {
-      title: 'Users'
-    }
   }
 }
 </script>
 
-<style scoped>
+<style lang="less" src="./home.less" scoped>
 </style>
