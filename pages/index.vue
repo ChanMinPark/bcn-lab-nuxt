@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <div class="main-header">
-      <div class="back-image" :style="{ backgroundImage: `url(${require('~/assets/img/main/bcn-main-header-1.jpg')})` }"></div>
+      <div class="back-image" :style="{ backgroundImage: `url('/img/main/bcn-main-header-1.jpg')` }"></div>
       <div class="content">
         <div class="container">
           <span class="color-primary">B</span>roadband<br>
@@ -12,23 +12,17 @@
       </div>
     </div>
 
-    <br><br><br><br><br><br><br>
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
-    <h1 class="title">
-      USERS
-    </h1>
-    <ul class="users">
-      <li v-for="(user, index) in users" :key="index" class="user">
-        <nuxt-link :to="{ name: 'id', params: { id: index }}">
-          {{ user.name }}
-        </nuxt-link>
-      </li>
-    </ul>
+    <section class="container">
+      <h3>NEWS</h3>
+      <div>
+        <ul>
+          <li>이미지1</li>
+          <li>이미지2</li>
+          <li>이미지3</li>
+          <li>이미지4</li>
+        </ul>
+      </div>
+    </section>
   </div>
 </template>
 
