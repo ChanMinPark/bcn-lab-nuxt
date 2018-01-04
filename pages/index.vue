@@ -23,6 +23,30 @@
         </ul>
       </div>
     </section>
+
+    <section class="container">
+      <h3>NEWS</h3>
+      <div>
+        <ul>
+          <li>이미지1</li>
+          <li>이미지2</li>
+          <li>이미지3</li>
+          <li>이미지4</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container">
+      <h3>NEWS</h3>
+      <div>
+        <ul>
+          <li>이미지1</li>
+          <li>이미지2</li>
+          <li>이미지3</li>
+          <li>이미지4</li>
+        </ul>
+      </div>
+    </section>
   </div>
 </template>
 
