@@ -25,25 +25,25 @@
     </section>
 
     <section class="container">
-      <h3>NEWS</h3>
+      <h3>PUBLICATIONS</h3>
       <div>
         <ul>
-          <li>이미지1</li>
-          <li>이미지2</li>
-          <li>이미지3</li>
-          <li>이미지4</li>
+          <li>논문 1</li>
+          <li>논문 2</li>
+          <li>논문 3</li>
+          <li>논문 4</li>
         </ul>
       </div>
     </section>
 
     <section class="container">
-      <h3>NEWS</h3>
+      <h3>TREND OF TECHNOLOGY</h3>
       <div>
         <ul>
-          <li>이미지1</li>
-          <li>이미지2</li>
-          <li>이미지3</li>
-          <li>이미지4</li>
+          <li>신기술 동향 1</li>
+          <li>신기술 동향 2</li>
+          <li>신기술 동향 3</li>
+          <li>신기술 동향 4</li>
         </ul>
       </div>
     </section>

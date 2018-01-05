@@ -1,7 +1,7 @@
 <template>
   <div>
     <my-navigation/>
-    <nuxt/>
+    <nuxt class="default-layout-nuxt"/>
     <my-footer/>
   </div>
 </template>
@@ -18,5 +18,13 @@
   }
 </script>
 
-<style>
+<style lang="less">
+  @import "~assets/less/bootstrap/variables.less";
+  
+  .default-layout-nuxt {
+    padding-top: @navbar-height-m;
+    @media (min-width: @screen-sm-min) {
+      padding-top: @navbar-height;
+    }
+  }
 </style>

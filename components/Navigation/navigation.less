@@ -82,6 +82,21 @@
                 top: @navbar-scrolled-height;
               }
             }
+
+            > ul {
+              > li {
+                > a {
+                  text-decoration: none;
+                  color: #fff;
+
+                  &:hover,
+                  &.nuxt-link-exact-active,
+                  &.nuxt-link-active {
+                    font-weight: 800;
+                  }
+                }
+              }
+            }
           }
         }
       }
