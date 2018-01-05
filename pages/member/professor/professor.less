@@ -1,0 +1,42 @@
+#member-professor {
+  .professor-info {
+    .profile-image {
+      display: inline-block;
+      position: relative;
+
+      &:after {
+          position: absolute;
+          display: block;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: radial-gradient(center center, farthest-side, rgba(255, 255, 255, 0) 88%, #fff 100%);
+          background: -webkit-radial-gradient(center center, farthest-side, rgba(255, 255, 255, 0) 88%, #fff 100%);
+          // background: -moz-radial-gradient(center center, farthest-side, rgba(255, 255, 255, 0) 90%, #fff 100%);
+      }
+    }
+
+    .info {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 50px;
+
+      .name {
+        margin-top: 0;
+        padding-bottom: 20px;
+        font-weight: 700;
+      }
+
+      .position {
+        padding-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .contact-channel {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
