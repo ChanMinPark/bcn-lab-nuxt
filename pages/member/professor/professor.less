@@ -1,3 +1,5 @@
+@import "~assets/less/bootstrap/variables.less";
+
 #member-professor {
   .professor-info {
     .profile-image {
@@ -36,6 +38,26 @@
 
       .contact-channel {
         padding-bottom: 20px;
+      }
+    }
+  }
+
+  .section-title {
+    color: @brand-primary;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      padding-left: 12px;
+      text-indent: -12px;
+
+      &:before {
+        content: '● ';
+        color: @brand-primary;
       }
     }
   }

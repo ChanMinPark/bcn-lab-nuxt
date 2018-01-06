@@ -25,7 +25,7 @@
     <hr>
 
     <section class="professor-brief-bio">
-      <h3>Brief Bio.</h3>
+      <h3 class="section-title">Brief Bio.</h3>
       <div>
         Prof. Byung-Seo Kim received the B.S. degree in electrical engineering from In-Ha University, InCheon, Korea in 1998 and received M.S. and Ph.D. degrees in electrical and computer engineering from University of Florida in 2001 and 2004, respectively. During Ph.D degree, he has been advised by Professor Yuguang "Michael" Fang in Wireless Networks Group (WINET).<br>
         Between 1997 and 1999, he worked for Motorola Korea Ltd., PaJu, Korea as a Computer Integrated Manufacturing (CIM) Engineer in ATR&D department.<br>
@@ -39,7 +39,7 @@
     <hr>
 
     <section class="professor-professional-activities">
-      <h3>Professional Activities</h3>
+      <h3 class="section-title">Professional Activities</h3>
       <div>
         <ul>
           <li>Guest Editor for Special Issue on "Cross-layer Design Issues, Challenges and Opportunities for Future Intelligent Heterogeneous Networks,"<br>Journal of Ambient Intelligence and Humanized Computing, 2017</li>
@@ -60,7 +60,7 @@
     <hr>
 
     <section class="professor-invited-talk">
-      <h3>Invited Talk</h3>
+      <h3 class="section-title">Invited Talk</h3>
       <div>
         <ul>
           <li>2017.09.30 "Wireless Information-Centric Networking with Edge Computing for Vehicular Applications" APNOMS-2017</li>
@@ -84,7 +84,7 @@
     <hr>
 
     <section class="professor-research-interests">
-      <h3>Research Interests</h3>
+      <h3 class="section-title">Research Interests</h3>
       <div>
         <ul>
           <li>Medium Access Control (MAC) Protocols in Wireless/Wired Networks (IEEE 802.11x, 802.15.x, 802.16.x, 802.20, LTE)</li>
@@ -101,7 +101,7 @@
     <hr>
 
     <section class="professor-student">
-      <h3>
+      <h3 class="section-title">
         Perspective Graduate and Post Doctor Student<br>
         (Including Foreign Students)
       </h3>

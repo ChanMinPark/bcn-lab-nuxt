@@ -23,6 +23,7 @@
   
   .default-layout-nuxt {
     padding-top: @navbar-height-m;
+    padding-bottom: 100px;
     @media (min-width: @screen-sm-min) {
       padding-top: @navbar-height;
     }
