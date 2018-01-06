@@ -7,9 +7,9 @@
         </div>
         <div class="nav-list clearfix">
           <ul class="list-unstyled">
-            <li><nuxt-link :to="{ name: 'index' }">HOME</nuxt-link></li>
+            <li><nuxt-link class="home-link" :to="{ name: 'index' }">HOME</nuxt-link></li>
             <li>
-              <nuxt-link :to="{ name: 'member-professor' }">MEMBER</nuxt-link>
+              <nuxt-link :class="{ 'member-active': this.$route.path.indexOf('member') !== -1 }" :to="{ name: 'member-professor' }">MEMBER</nuxt-link>
               <div class="nav-sub-1step nav-sub-open" :class="{ 'scrolled': isScrolled }">
                 <ul class="list-unstyled">
                   <li><nuxt-link :to="{ name: 'member-professor' }">Professor</nuxt-link></li>
@@ -20,7 +20,7 @@
             </li>
             <li><nuxt-link :to="{ name: 'projects' }">PROJECTS</nuxt-link></li>
             <li>
-              <nuxt-link :to="{ name: 'publications-journal' }">PUBLICATIONS</nuxt-link>
+              <nuxt-link :class="{ 'publications-active': this.$route.path.indexOf('publications') !== -1 }" :to="{ name: 'publications-journal' }">PUBLICATIONS</nuxt-link>
               <div class="nav-sub-1step nav-sub-open" :class="{ 'scrolled': isScrolled }">
                 <ul class="list-unstyled">
                   <li><nuxt-link :to="{ name: 'publications-journal' }">Journal</nuxt-link></li>
@@ -30,7 +30,7 @@
               </div>
             </li>
             <li>
-              <nuxt-link :to="{ name: 'board-news' }">BOARD</nuxt-link>
+              <nuxt-link :class="{ 'board-active': this.$route.path.indexOf('board') !== -1 }" :to="{ name: 'board-news' }">BOARD</nuxt-link>
               <div class="nav-sub-1step nav-sub-open" :class="{ 'scrolled': isScrolled }">
                 <ul class="list-unstyled">
                   <li><nuxt-link :to="{ name: 'board-news' }">News</nuxt-link></li>
