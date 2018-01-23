@@ -34,8 +34,8 @@
               <div class="nav-sub-1step nav-sub-open" :class="{ 'scrolled': isScrolled }">
                 <ul class="list-unstyled">
                   <li><nuxt-link :to="{ name: 'board-news' }">News</nuxt-link></li>
-                  <li style="line-height: 20px;"><nuxt-link :to="{ name: 'board-trend' }">Trend of<br>technology</nuxt-link></li>
-                  <li><nuxt-link :to="{ name: 'board-assignment' }">Assignment</nuxt-link></li>
+                  <!--<li style="line-height: 20px;"><nuxt-link :to="{ name: 'board-trend' }">Trend of<br>technology</nuxt-link></li>-->
+                  <!--<li><nuxt-link :to="{ name: 'board-assignment' }">Assignment</nuxt-link></li>-->
                 </ul>
               </div>
             </li>
