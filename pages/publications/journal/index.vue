@@ -5,24 +5,58 @@
     <section>
       <h2>Refereed International Journal papers (SCI/SCIE):</h2>
     
-      <!--<div class="ongoing-project-list">-->
-      <!--  <ul class="list-unstyled">-->
-      <!--    <li v-for="(item, index) in onGoingList" :key="index">-->
-      <!--      <div class="period">-->
-      <!--        {{ item.period }}-->
-      <!--      </div>-->
-      <!--      <div class="project">-->
-      <!--        {{ item.title }}-->
-      <!--      </div>-->
-      <!--    </li>-->
-      <!--  </ul>-->
-      <!--</div>-->
+      <div class="publication-journal-list">
+        <ol>
+          <li v-for="(item, index) in journalList.sci" :key="index">
+            <div>
+              {{ item }}
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    
+    <section class="not-first-section">
+      <h2>Refereed International Journal papers (Non-SCI/SCIE):</h2>
+    
+      <div class="publication-journal-list">
+        <ol>
+          <li v-for="(item, index) in journalList.nonSci" :key="index">
+            <div>
+              {{ item }}
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    
+    <section class="not-first-section">
+      <h2>Refereed Domestic Journal papers:</h2>
+    
+      <div class="publication-journal-list">
+        <ol>
+          <li v-for="(item, index) in journalList.domestic" :key="index">
+            <div>
+              {{ item }}
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
   </div>
 </template>
 
 <script>
+  import axios from '~/plugins/axios'
+  
   export default {
+    async asyncData () {
+      let { data } = await axios.get('/api/publication?type=journal')
+
+      return {
+        journalList: data
+      }
+    }
   }
 </script>
 
