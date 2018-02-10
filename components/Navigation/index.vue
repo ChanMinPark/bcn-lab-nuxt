@@ -26,6 +26,7 @@
                   <li><nuxt-link :to="{ name: 'publications-journal' }">Journal</nuxt-link></li>
                   <li><nuxt-link :to="{ name: 'publications-conference' }">Conference</nuxt-link></li>
                   <li><nuxt-link :to="{ name: 'publications-patents' }">Patents</nuxt-link></li>
+                  <li><nuxt-link :to="{ name: 'publications-software' }">Software</nuxt-link></li>
                 </ul>
               </div>
             </li>
