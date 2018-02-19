@@ -1,0 +1,44 @@
+@import "~assets/less/bootstrap/variables.less";
+
+#board-news {
+  .news-list {
+    > li {
+      padding-bottom: 30px;
+      
+      .news-card {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        box-shadow: 3px 3px 10px #ddd;
+        transition: all .3s ease;
+    
+        &:hover {
+          box-shadow: 3px 3px 10px @brand-primary;
+          border: 1px solid @brand-primary;
+        }
+        
+        .news-thumbnail {
+          width: 100%;
+          padding-bottom: 52.5%;
+          background-size: cover;
+          background-position: center;
+        }
+        
+        .news-title {
+          height: 60px;
+          padding: 10px;
+          
+          > h3 {
+            margin: 0;
+            font-size: 16px;
+          }
+        }
+        
+        .news-date {
+          text-align: left;
+          padding: 0 0 10px 10px;
+          color: #777;
+        }
+      }
+    }
+  }
+}
