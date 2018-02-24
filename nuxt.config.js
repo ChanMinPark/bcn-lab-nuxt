@@ -19,7 +19,9 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['~/assets/less/app.less'],
+  css: [
+    '~/assets/less/app.less'
+  ],
   /*
   ** Add axios globally
   */
