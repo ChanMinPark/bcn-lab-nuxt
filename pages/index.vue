@@ -1,65 +1,68 @@
 <template>
-  <div id="home">
-    <div class="main-header">
-      <div class="back-image" :style="{ backgroundImage: `url('/img/main/bcn-main-header-1.jpg')` }"></div>
-      <div class="content">
-        <div class="container">
-          <span class="color-primary">B</span>roadband<br>
-          <span class="color-primary">C</span>onvergence<br>
-          <span class="color-primary">N</span>etwork<br>
-          <span class="color-primary">L</span>aboratory
-        </div>
+  <div class="container">
+    <div>
+      <logo />
+      <h1 class="title">
+        bcn-lab-nuxt
+      </h1>
+      <h2 class="subtitle">
+        BCN website
+      </h2>
+      <div class="links">
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
+          Documentation
+        </a>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          class="button--grey"
+        >
+          GitHub
+        </a>
       </div>
     </div>
-
-    <section class="container">
-      <h3>NEWS</h3>
-      <div>
-        <ul>
-          <li>이미지1</li>
-          <li>이미지2</li>
-          <li>이미지3</li>
-          <li>이미지4</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="container">
-      <h3>PUBLICATIONS</h3>
-      <div>
-        <ul>
-          <li>논문 1</li>
-          <li>논문 2</li>
-          <li>논문 3</li>
-          <li>논문 4</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="container">
-      <h3>TREND OF TECHNOLOGY</h3>
-      <div>
-        <ul>
-          <li>신기술 동향 1</li>
-          <li>신기술 동향 2</li>
-          <li>신기술 동향 3</li>
-          <li>신기술 동향 4</li>
-        </ul>
-      </div>
-    </section>
   </div>
 </template>
 
 <script>
-  // import axios from '~/plugins/axios'
+import Logo from '~/components/Logo.vue'
 
-  export default {
-    // async asyncData () {
-    //   let { data } = await axios.get('/api/users')
-    //   return { users: data }
-    // }
+export default {
+  components: {
+    Logo
   }
+}
 </script>
 
-<style lang="less" src="./home.less" scoped>
+<style>
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 100px;
+  color: #35495e;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
+}
 </style>
