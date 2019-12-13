@@ -17,7 +17,20 @@
           ></div>
         </div>
       </div>
-      <div class="upper-panel h-100"></div>
+      <div class="upper-panel h-100">
+        <div class="name-box">
+          <div class="name-box__border border-top"></div>
+          <div class="name-box__border border-left"></div>
+          <div class="name-box__border border-bottom"></div>
+          <div class="name-box__border border-right"></div>
+          <div class="name-box__content">
+            <div><span class="color-secondary">B</span>roadband</div>
+            <div><span class="color-secondary">C</span>onvergence</div>
+            <div><span class="color-secondary">N</span>etworks</div>
+            <div>Laboratory</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 주요 연구 주제 섹션 -->

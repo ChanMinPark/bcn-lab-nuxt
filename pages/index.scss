@@ -52,6 +52,51 @@
       z-index: 2;
       background-color: $color-primary;
       box-shadow: 0 .5rem 1rem $color-black;
+
+      .name-box {
+        position: relative;
+        margin-top: 40%;
+        margin-left: 20%;
+        margin-right: 20%;
+        padding: 50px;
+
+        .name-box__border {
+          position: absolute;
+          background-color: #fff;
+
+          &.border-top {
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 30px;
+          }
+          &.border-left {
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 100%;
+          }
+          &.border-bottom {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+          }
+          &.border-right {
+            bottom: 0;
+            right: 0;
+            width: 30px;
+            height: 100%;
+          }
+        }
+
+        .name-box__content {
+          font-size: 45px;
+          font-weight: 900;
+          letter-spacing: 5px;
+          color: #fff;
+        }
+      }
     }
   }
 
