@@ -1,4 +1,8 @@
 #page-index {
+  .section-major {
+    padding: 150px 0;
+  }
+
   .sec-cover {
     position: relative;
     width: 100%;
@@ -52,12 +56,12 @@
       z-index: 2;
       background-color: $color-primary;
       box-shadow: 0 .5rem 1rem $color-black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .name-box {
         position: relative;
-        margin-top: 40%;
-        margin-left: 20%;
-        margin-right: 20%;
         padding: 50px;
 
         .name-box__border {
@@ -67,26 +71,46 @@
           &.border-top {
             top: 0;
             right: 0;
-            width: 100%;
+            width: 0;
             height: 30px;
+            transition: width 1s ease .5s;
+
+            &.opened {
+              width: 100%;
+            }
           }
           &.border-left {
             top: 0;
             left: 0;
             width: 30px;
-            height: 100%;
+            height: 0;
+            transition: height 1s ease .5s;
+
+            &.opened {
+              height: 100%;
+            }
           }
           &.border-bottom {
             bottom: 0;
             left: 0;
-            width: 100%;
+            width: 0;
             height: 30px;
+            transition: width 1s ease .5s;
+
+            &.opened {
+              width: 100%;
+            }
           }
           &.border-right {
             bottom: 0;
             right: 0;
             width: 30px;
-            height: 100%;
+            height: 0;
+            transition: height 1s ease .5s;
+
+            &.opened {
+              height: 100%;
+            }
           }
         }
 
@@ -116,13 +140,103 @@
           }
           .topic-box__title {
             margin-top: 30px;
-            font-size: 28px;
-            font-weight: 700;
+            font-size: 22px;
+            font-weight: 800;
+            color: $color-primary;
           }
           .topic-box__subtitle {
             margin-top: 10px;
-            font-size: 22px;
-            font-weight: 500;
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .sec-research-area {
+    background-color: $color-gray-100;
+
+    .section-title {
+      font-weight: 900;
+      font-size: 40px;
+      color: $color-primary;
+    }
+
+    .section-subtitle {
+      margin-top: 30px;
+      font-weight: 400;
+      font-size: 24px;
+    }
+
+    .research-list {
+      margin-top: 40px;
+
+      > li {
+        margin-top: 30px;
+
+        .research-box {
+          position: relative;
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 400px;
+
+          .background-layer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, .6);
+            z-index: 1;
+          }
+
+          .box__title,
+          .box__subs {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity .3s ease;
+          }
+
+          .box__title {
+            opacity: 1;
+
+            > h3 {
+              font-size: 28px;
+              font-weight: 900;
+            }
+          }
+          .box__subs {
+            opacity: 0;
+
+            > ul {
+              > li {
+                padding: 10px;
+                font-weight: 700;
+                border-bottom: 1px solid $color-third;
+
+                &:last-child {
+                  border-bottom: 0;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            .box__title {
+              opacity: 0;
+            }
+            .box__subs {
+              opacity: 1;
+            }
           }
         }
       }
